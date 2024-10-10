@@ -8,9 +8,9 @@ import javax.swing.*
 import javax.swing.JScrollPane
 
 // Choose initial file to work with. Mock up.
-def sourceData = new FileInputStream("src/zad1/v362861327.txt") // In real life case can use URL or Twitch OAuth instead.
+def sourceData = new FileInputStream("test_Data/v362861327.txt") // In real life case can use URL or Twitch OAuth instead.
 // Target for the output.
-def target = new FileOutputStream("src/zad1/v362861327_cleaned.txt", true)
+def target = new FileOutputStream("test_Data/v362861327_cleaned.txt", true)
 
 // For chat file read it line by line.
 def readLbyL = sourceData.readLines().stream()
